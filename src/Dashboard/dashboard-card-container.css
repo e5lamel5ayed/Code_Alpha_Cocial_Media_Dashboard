@@ -1,0 +1,33 @@
+.section1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 4rem;
+}
+.section2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2rem 4rem 6rem 4rem;
+}
+.sub-header {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Inter;
+  color: var(--darkgrayishblue);
+  margin: 2rem 11rem;
+}
+
+@media (max-width: 1200px) {
+  .section1,
+  .section2 {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 727px) {
+  .section1,
+  .section2 {
+    margin: 0px;
+  }
+  .sub-header {
+    margin: 2rem;
+  }
+}

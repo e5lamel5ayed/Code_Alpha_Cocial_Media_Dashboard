@@ -1,0 +1,98 @@
+.small-card-container {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #dddee6);
+  box-shadow: 20px 20px 60px #d0d2d9, -20px -20px 60px #ffffff;
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease, border 0.3s;
+}
+.small-card-container:hover {
+  background: linear-gradient(-145deg, #ffffff, #dddee6);
+  box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+.small-card-container .header {
+  display: flex;
+  margin: 2rem 2rem 0rem 2rem;
+  justify-content: space-between;
+}
+.small-card-container .header p {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: Inter;
+  margin-top: 5px;
+  color: var(--darkgrayishblue);
+}
+
+.small-card-container .header img {
+  width: 1.5rem;
+}
+
+.small-card-container .body {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+}
+.body .count-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0px;
+  color: goldenrod;
+}
+.count-status {
+  display: flex;
+  margin-top: 16px;
+}
+.count-status img {
+  width: 10px;
+  height: 5px;
+  margin: 8px 5px auto 0px;
+}
+.count-status {
+  font-weight: 700;
+}
+.small-color {
+  color: var(--brightred);
+}
+.small-color2 {
+  color: var(--limegreen);
+}
+
+#smallCard1,
+#smallCard2,
+#smallCard3,
+#smallCard4 {
+  transition: all 0.3s ease, border 0.3s;
+}
+
+.dark-theme-card {
+  background: linear-gradient(145deg, #343e65, #2c3455);
+  box-shadow: 5px 7px 16px rgba(0, 0, 0, 0.5),
+    -5px -5px 7px rgba(63, 63, 63, 0.5);
+  transition: all 0.6s cubic-bezier(0.11, 0, 0.5, 0);
+}
+.dark-theme-card:hover {
+  background: linear-gradient(-145deg, #343e65, #2c3455);
+  box-shadow: inset 20px 20px 60px #2a3150, inset -20px -20px 60px #38436c;
+}
+.dark-theme-text {
+  color: var(--whitedarktheme) !important;
+  transition: all 0.6s cubic-bezier(0.11, 0, 0.5, 0);
+}
+.dark-theme-text-gray {
+  color: var(--desaturatedblue) !important;
+  transition: all 0.6s cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@media (max-width: 1400px) {
+  .small-card-container {
+    width: 250px;
+  }
+}
+@media (max-width: 1200px) {
+  .small-card-container {
+    margin: 2rem;
+    width: 300px;
+  }
+}
